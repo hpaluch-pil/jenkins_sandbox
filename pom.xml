@@ -14,14 +14,11 @@
     <properties>
         <revision>1.0</revision>
         <changelist>-SNAPSHOT</changelist>
-
         <!-- Baseline Jenkins version you use to build the plugin. Users must have this version or newer to run. -->
-        <jenkins.version>2.235.1</jenkins.version>
+        <jenkins.version>2.257</jenkins.version>
         <java.level>8</java.level>
     </properties>
     <name>TODO Plugin</name>
-    
-
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -59,20 +56,12 @@
             <artifactId>workflow-durable-task-step</artifactId>
             <scope>test</scope>
         </dependency>
+        	    <dependency>
+		    <groupId>org.jenkins-ci.plugins</groupId>
+		    <artifactId>active-directory</artifactId>
+		    <version>2.17</version>
+		</dependency>        
     </dependencies>
-
-    
-    <!-- If you want this to appear on the plugin site page:
-    <developers>
-      <developer>
-        <id>bhacker</id>
-        <name>Bob Q. Hacker</name>
-        <email>bhacker@nowhere.net</email>
-      </developer>
-    </developers> -->
-
-    
-
     <repositories>
         <repository>
             <id>repo.jenkins-ci.org</id>
